@@ -378,7 +378,7 @@ function traverse(
 
         if (nodeSkip !== true) {
             (root as MapResult)[name] = (root as MapResult)[name] || (
-                nodes.length ? {} : false
+                nodes.length ? {} : true
             );
 
             nodes.length && traverse(
